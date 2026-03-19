@@ -166,3 +166,4 @@ cython_debug/
 .vscode/
 .env*
 .vercel
+.env*.local
