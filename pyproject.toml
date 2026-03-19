@@ -1,0 +1,61 @@
+[build-system]
+requires = [
+    "setuptools",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "karaoke-backend"
+version = "1.0.0"
+description = "Karaoke system backend"
+requires-python = ">=3.14.0"
+dependencies = [
+    "django==5.0.7",
+    "djangorestframework",
+    "django-filter",
+    "django-cors-headers",
+]
+
+[project.optional-dependencies]
+# must install for devs
+dev = [
+    "pre-commit>=4.3.0",
+    "django-seed",
+    "PyYAML",  # for django-seed
+]
+# only if you have a specific local use for them
+# or if you want to integrate them with your IDE
+dev-lint = ["ruff==0.12.9", "mypy==1.9.0"]
+
+[tool.setuptools.packages.find]
+where = ["django"]
+include = ["core", "backend"]
+namespaces = false
+
+[tool.ruff]
+target-version = "py314"
+
+[tool.ruff.format]
+# Use single quotes for non-triple-quoted strings.
+quote-style = "single"
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
+
+[tool.ruff.lint.flake8-quotes]
+docstring-quotes = "double"
+
+[tool.ruff.lint]
+# Enable most popular linting rules
+select = [
+    "E",   # pycodestyle
+    "F",   # Pyflakes
+    "UP",  # pyupgrade
+    "B",   # flake8-bugbear
+    "SIM", # flake8-simplify
+    "I",   # isort
+]

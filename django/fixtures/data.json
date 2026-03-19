@@ -1,0 +1,332 @@
+[
+  {
+    "model": "core.album",
+    "pk": 1,
+    "fields": {
+      "name": "My Head Is an Animal",
+      "publication_year": 2011
+    }
+  },
+  {
+    "model": "core.album",
+    "pk": 2,
+    "fields": {
+      "name": "Stray Sheep",
+      "publication_year": 2018
+    }
+  },
+  {
+    "model": "core.album",
+    "pk": 3,
+    "fields": {
+      "name": "Native",
+      "publication_year": 2012
+    }
+  },
+  {
+    "model": "core.album",
+    "pk": 4,
+    "fields": {
+      "name": "Test",
+      "publication_year": null
+    }
+  },
+  {
+    "model": "core.album",
+    "pk": 5,
+    "fields": {
+      "name": "Leftoverture",
+      "publication_year": null
+    }
+  },
+  {
+    "model": "core.artist",
+    "pk": 1,
+    "fields": {
+      "name": "Yonezu Kenshi"
+    }
+  },
+  {
+    "model": "core.artist",
+    "pk": 2,
+    "fields": {
+      "name": "Fei Yu Qing"
+    }
+  },
+  {
+    "model": "core.artist",
+    "pk": 3,
+    "fields": {
+      "name": "Of Monsters and Men"
+    }
+  },
+  {
+    "model": "core.artist",
+    "pk": 5,
+    "fields": {
+      "name": "John Denver"
+    }
+  },
+  {
+    "model": "core.artist",
+    "pk": 6,
+    "fields": {
+      "name": "One Republic"
+    }
+  },
+  {
+    "model": "core.artist",
+    "pk": 7,
+    "fields": {
+      "name": "Kansas"
+    }
+  },
+  {
+    "model": "core.genre",
+    "pk": 1,
+    "fields": {
+      "name": "J-pop"
+    }
+  },
+  {
+    "model": "core.genre",
+    "pk": 2,
+    "fields": {
+      "name": "Mandarin-pop"
+    }
+  },
+  {
+    "model": "core.genre",
+    "pk": 3,
+    "fields": {
+      "name": "Country"
+    }
+  },
+  {
+    "model": "core.genre",
+    "pk": 4,
+    "fields": {
+      "name": "Funk"
+    }
+  },
+  {
+    "model": "core.genre",
+    "pk": 5,
+    "fields": {
+      "name": "Indie Rock"
+    }
+  },
+  {
+    "model": "core.genre",
+    "pk": 6,
+    "fields": {
+      "name": "Indie Pop"
+    }
+  },
+  {
+    "model": "core.genre",
+    "pk": 7,
+    "fields": {
+      "name": "Indie Folk"
+    }
+  },
+  {
+    "model": "core.genre",
+    "pk": 8,
+    "fields": {
+      "name": "Folk"
+    }
+  },
+  {
+    "model": "core.genre",
+    "pk": 9,
+    "fields": {
+      "name": "Rock"
+    }
+  },
+  {
+    "model": "core.genre",
+    "pk": 10,
+    "fields": {
+      "name": "Mandarin Classics"
+    }
+  },
+  {
+    "model": "core.genre",
+    "pk": 11,
+    "fields": {
+      "name": "English Pop"
+    }
+  },
+  {
+    "model": "core.language",
+    "pk": 1,
+    "fields": {
+      "name": "English"
+    }
+  },
+  {
+    "model": "core.language",
+    "pk": 2,
+    "fields": {
+      "name": "Japanese"
+    }
+  },
+  {
+    "model": "core.language",
+    "pk": 3,
+    "fields": {
+      "name": "Mandarin"
+    }
+  },
+  {
+    "model": "core.song",
+    "pk": 1,
+    "fields": {
+      "name": "Lemon",
+      "album": 2,
+      "hitcounts": 0,
+      "language": 2,
+      "with_voice": true,
+      "path": "/home/lam/Music/karaoke/japanese/KenshiYonezu-Lemon.mp4",
+      "youtube_link": "https://www.youtube.com/watch?v=pvc2MIM2zpY&list=RDpvc2MIM2zpY&start_radio=1",
+      "artist": [
+        1
+      ],
+      "genre": [
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "model": "core.song",
+    "pk": 2,
+    "fields": {
+      "name": "Yi Jian Mei",
+      "album": null,
+      "hitcounts": 0,
+      "language": 3,
+      "with_voice": true,
+      "path": "/home/lam/Music/karaoke/mandarin/FeiYuChing-YiJianMei.mp4",
+      "youtube_link": "https://www.youtube.com/watch?v=VKq2flvS7dw&list=RDVKq2flvS7dw&start_radio=1",
+      "artist": [
+        2
+      ],
+      "genre": [
+        10
+      ]
+    }
+  },
+  {
+    "model": "core.song",
+    "pk": 3,
+    "fields": {
+      "name": "Dirty Paws",
+      "album": 1,
+      "hitcounts": 0,
+      "language": 1,
+      "with_voice": false,
+      "path": "/home/lam/Music/karaoke/japanese/Dirty_Paws-Of_Monsters_and_Men.mp4",
+      "youtube_link": "https://www.youtube.com/watch?v=T3igi1q5dwk",
+      "artist": [
+        3
+      ],
+      "genre": [
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  {
+    "model": "core.song",
+    "pk": 4,
+    "fields": {
+      "name": "Counting Stars",
+      "album": 3,
+      "hitcounts": 0,
+      "language": 1,
+      "with_voice": false,
+      "path": "",
+      "youtube_link": "https://www.youtube.com/watch?v=3EG3CfTv4lQ",
+      "artist": [
+        6
+      ],
+      "genre": [
+        9,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.song",
+    "pk": 5,
+    "fields": {
+      "name": "Carry on Wayward Son",
+      "album": 5,
+      "hitcounts": 0,
+      "language": 1,
+      "with_voice": true,
+      "path": "",
+      "youtube_link": "https://www.youtube.com/watch?v=uwz3o5GNDTA&list=RDuwz3o5GNDTA&start_radio=1",
+      "artist": [
+        7
+      ],
+      "genre": [
+        9
+      ]
+    }
+  },
+  {
+    "model": "core.playlist",
+    "pk": 1,
+    "fields": {
+      "name": "Popular",
+      "type": "Recent"
+    }
+  },
+  {
+    "model": "core.playlist",
+    "pk": 2,
+    "fields": {
+      "name": "New",
+      "type": ""
+    }
+  },
+  {
+    "model": "core.playlist",
+    "pk": 4,
+    "fields": {
+      "name": "MyPlaylist",
+      "type": "Recent"
+    }
+  },
+  {
+    "model": "core.playlistitem",
+    "pk": 2,
+    "fields": {
+      "song": 4,
+      "playlist": 1,
+      "order": 1
+    }
+  },
+  {
+    "model": "core.playlistitem",
+    "pk": 3,
+    "fields": {
+      "song": 2,
+      "playlist": 1,
+      "order": 2
+    }
+  },
+  {
+    "model": "core.playlistitem",
+    "pk": 4,
+    "fields": {
+      "song": 1,
+      "playlist": 1,
+      "order": 3
+    }
+  }
+]
