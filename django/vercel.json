@@ -3,11 +3,11 @@
   "routes": [
     {
       "src": "/static/(.*)",
-      "dest": "/static/$1"
+      "dest": "django/static/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "backend/wsgi.py"
+      "dest": "django/backend/wsgi.py"
     }
   ]
 }
