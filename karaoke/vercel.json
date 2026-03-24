@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "karaoke/backend/wsgi.py"
+    }
+  ]
+}

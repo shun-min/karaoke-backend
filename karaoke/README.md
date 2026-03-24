@@ -1,6 +1,6 @@
 # Setup backend
 ### Notes:
-1. Top level `karaoke-django` folder is the django project root, which contains a `core` app and `backend` app.
+1. Top level `karaoke` folder is the django project root, which contains a `core` app and `backend` app.
 2. `pyproject.toml` and `env` virtualenv folder are outside of the django project root, but does not affect the frontend folder.
 
 ## Pre-requisites:
@@ -19,7 +19,7 @@ pip install -e .
 pip install -e .[dev]
 pip install -e .[dev-lint]
 ```
-4. `cd karaoke-django`
+4. `cd karaoke`
 5. create `.env` file, add `DJANGO_SECRET` value. Re-generate it if you don't have one
 6. `python manage.py runserver` to test
 
@@ -30,13 +30,13 @@ This project uses sqlite, controls db data with django-seed module. \
 
 ### Seed database: 
 ```shell
-cd karaoke-django
+cd karaoke
 python manage.py loaddata core/manage/seed.json
 ```
 
 ### Dump database: 
 ```shell
-cd karaoke-django
+cd karaoke
 python manage.py dumpdata core --indent 2 > core/manage/seed.json
 ```
 

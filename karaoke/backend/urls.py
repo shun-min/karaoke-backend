@@ -16,8 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from core.views import index
+
 
 urlpatterns = [
+    path('', index),
     path('admin/', admin.site.urls),
     path('/', include('rest_framework.urls')),
     path('karaoke/api/v1/', include('core.api.v1.urls')),
