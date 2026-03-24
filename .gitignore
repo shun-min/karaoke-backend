@@ -165,5 +165,7 @@ cython_debug/
 .python-version
 .vscode/
 .env*
-.vercel
 .env*.local
+
+# vercel deploy
+.vercel/
